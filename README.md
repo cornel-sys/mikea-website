@@ -1,1 +1,1 @@
-# MIKEA Website build on Next.js with Talwind CSS Styling
+# MIKEA Website build on Next.js and Tailwdind CSS
