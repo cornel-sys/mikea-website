@@ -18,7 +18,7 @@ export default function Home() {
       </header>
       <section className="absolute min-h-[100dvh] h-full w-full top-0 -z-10">
         <video
-          src="/presentation.mp4"
+          src="/public/presentation.mp4"
           autoPlay
           loop
           muted
