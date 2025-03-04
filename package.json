@@ -11,9 +11,11 @@
   "dependencies": {
     "framer-motion": "^12.4.4",
     "next": "15.1.6",
+    "next-intl": "^3.26.5",
     "next-videos": "^1.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
     "tailwind-scrollbar-hide": "^2.0.0"
   },
   "devDependencies": {

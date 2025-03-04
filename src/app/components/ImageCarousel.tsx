@@ -1,9 +1,11 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import React from "react";
 
 // Image Carousel Component
-const ImageCarousel = () => {
+const ImageCarousel = ({ messages }: { messages: string }) => {
   const images = Array.from(
     { length: 19 },
     (_, i) => `/imagini/${String(i + 1).padStart(2, "0")}.jpg`
@@ -50,7 +52,7 @@ const ImageCarousel = () => {
       {/* Centered text */}
       <div className="absolute flex justify-center w-full top-[50%]">
         <div className="text-xl md:text-3xl lg:text-4xl bg-white/80 py-2 lg:py-6 px-4 lg:px-16 mx-16 text-center rounded-3xl text-black">
-          Получить детали своего проекта
+          {messages}
         </div>
       </div>
     </section>
