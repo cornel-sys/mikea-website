@@ -12,14 +12,14 @@ const PhoneFooter = () => {
           alt="Instagram"
           width={0}
           height={0}
-          className="h-8 w-auto mr-4"
+          className="h-7 w-auto mr-4"
         />
         <Image
           src="/facebook.svg"
           alt="Facebook"
           width={0}
           height={0}
-          className="h-8 w-auto mr-8"
+          className="h-7 w-auto mr-8"
         />
 
         {/* Center Phone Icon */}
@@ -33,14 +33,14 @@ const PhoneFooter = () => {
           alt="Messenger"
           width={0}
           height={0}
-          className="h-8 w-auto ml-8"
+          className="h-7 w-auto ml-8"
         />
         <Image
           src="/whatsapp.svg"
           alt="WhatsApp"
           width={0}
           height={0}
-          className="h-8 w-auto ml-4"
+          className="h-7 w-auto ml-4"
         />
       </div>
     </>

@@ -5,7 +5,7 @@
   "ContactForm": {
     "title": "Оставьте свои данные",
     "name": "Имя",
-    "email": "Электронная почта",
+    "phone": "Телефон",
     "terrain": "Доступный участок",
     "terrainFirstOption": "Я владелец",
     "terrainSecondOption": "У меня нет участка",

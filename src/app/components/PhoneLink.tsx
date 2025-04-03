@@ -11,7 +11,7 @@ const PhoneLink = () => {
         height={0}
         width={0}
         alt="Phone Icon"
-        className="h-14 w-auto transform rotate-x-180"
+        className="h-10 w-auto transform rotate-x-180"
       />
       <div className="hidden lg:flex pl-4 text-2xl">{phone}</div>
     </a>

@@ -5,7 +5,7 @@
   "ContactForm": {
     "title": "Lasă-ne datele tale",
     "name": "Nume",
-    "email": "Email",
+    "phone": "Telefon",
     "terrain": "Teren disponibil",
     "terrainFirstOption": "Sunt proprietar",
     "terrainSecondOption": "Nu am teren",

@@ -11,7 +11,7 @@ const SocialLinks = () => {
           alt={`${name} Logo`}
           width={0}
           height={0}
-          className="h-8 lg:h-12 w-auto"
+          className="h-6 lg:h-10 w-auto"
         />
       ))}
     </section>

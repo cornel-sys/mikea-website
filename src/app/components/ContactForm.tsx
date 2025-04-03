@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useTranslations } from "next-intl";
-import { RiMailFill, RiContactsFill } from "@remixicon/react";
+import { RiPhoneFill, RiContactsFill } from "@remixicon/react";
 
 type ContactFormProps = {
   onSubmit: () => void;
@@ -17,7 +17,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
   const t = useTranslations("ContactForm");
 
   return (
-    <main>
+    <main className="z-50">
       <div className="flex flex-col gap-2 justify-center items-center w-full h-auto p-4 md:py-10 md:px-16 bg-neutral-900 rounded-md text-gray-200">
         <form className="flex flex-col gap-4 w-full" onSubmit={handleSubmit}>
           {/* contact us title */}
@@ -29,7 +29,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           <NameInput />
 
           {/* email input */}
-          <EmailInput />
+          <PhoneInput />
 
           {/* teren disponibil */}
           <TerrainOptions />
@@ -69,18 +69,25 @@ const NameInput = () => {
   );
 };
 
-const EmailInput = () => {
+const PhoneInput = () => {
   const t = useTranslations("ContactForm");
   return (
     <section className="flex items-center gap-2">
       <div className="relative w-full">
         <div className="absolute h-full flex items-center ps-2 pointer-events-none">
-          <RiMailFill className="text-gray-500 size-4 md:size-5" />
+          <RiPhoneFill className="text-gray-500 size-4 md:size-5" />
         </div>
         <input
-          type="email"
-          placeholder={t("email")}
+          type="tel"
+          placeholder={t("phone")}
           className="w-full p-2 border border-gray-600 rounded bg-neutral-800 ps-8 focus:ring-2 focus:ring-gray-500 focus:outline-none"
+          pattern="^\+?[0-9]*$"
+          onInput={(e) => {
+            e.currentTarget.value = e.currentTarget.value.replace(
+              /[^0-9+]/g,
+              ""
+            );
+          }}
           required
         />
       </div>
@@ -225,7 +232,7 @@ const InteriorOptions = () => {
           <input
             type="radio"
             id="interiorOption1"
-            name="terrainOption"
+            name="interiorOption"
             value={t("interiorFirstOption")}
             className="cursor-pointer"
             required
@@ -239,7 +246,7 @@ const InteriorOptions = () => {
           <input
             type="radio"
             id="interiorOption2"
-            name="terrainOption"
+            name="interiorOption"
             value={t("interiorSecondOption")}
             className="cursor-pointer"
             required
@@ -253,7 +260,7 @@ const InteriorOptions = () => {
           <input
             type="radio"
             id="interiorOption3"
-            name="terrainOption"
+            name="interiorOption"
             value={t("interiorThirdOption")}
             className="cursor-pointer"
             required
