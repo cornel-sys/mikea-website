@@ -8,7 +8,6 @@ import { useTranslations } from "next-intl";
 
 export default function Home() {
   const t = useTranslations("Homepage");
-  console.log(t("welcome"));
   return (
     <main className="scrollbar-hide overflow-auto h-full max-h-[100dvh] flex-col items-center select-none">
       <Header />

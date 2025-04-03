@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import React from "react";
+import ContactForm from "./ContactForm";
 
 // Image Carousel Component
 const ImageCarousel = ({ messages }: { messages: string }) => {
@@ -13,6 +14,8 @@ const ImageCarousel = ({ messages }: { messages: string }) => {
   const [index, setIndex] = useState(0);
   const [nextIndex, setNextIndex] = useState(1);
   const [isFading, setIsFading] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,11 +53,36 @@ const ImageCarousel = ({ messages }: { messages: string }) => {
       />
 
       {/* Centered text */}
-      <div className="absolute flex justify-center w-full top-[50%]">
-        <div className="text-xl md:text-3xl lg:text-4xl bg-white/80 py-2 lg:py-6 px-4 lg:px-16 mx-16 text-center rounded-3xl text-black">
-          {messages}
+      {!isOpen && (
+        <div className="absolute flex justify-center w-full top-1/2">
+          <div
+            className="text-xl md:text-3xl lg:text-4xl bg-white/80 py-2 lg:py-6 px-4 lg:px-16 mx-16 text-center rounded-3xl text-black cursor-pointer"
+            onClick={() => {
+              setIsOpen(true);
+            }}
+          >
+            {messages}
+          </div>
         </div>
-      </div>
+      )}
+
+      {isOpen && (
+        <>
+          <div
+            id="layout"
+            className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-75"
+            onClick={() => setIsOpen(false)}
+          >
+            <div
+              id="contact-form-window"
+              className="absolute left-1/2 top-[45%] md:top-1/2 w-4/5 xl:w-auto bg-zinc-800 p-2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <ContactForm onSubmit={() => setIsOpen(false)} />
+            </div>
+          </div>
+        </>
+      )}
     </section>
   );
 };

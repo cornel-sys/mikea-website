@@ -1,5 +1,19 @@
 {
   "Homepage": {
     "welcome": "Obține detaliile proiectului tău"
+  },
+  "ContactForm": {
+    "title": "Lasă-ne datele tale",
+    "name": "Nume",
+    "email": "Email",
+    "terrain": "Teren disponibil",
+    "terrainFirstOption": "Sunt proprietar",
+    "terrainSecondOption": "Nu am teren",
+    "house": "Casa m2",
+    "submitButton": "Trimite",
+    "interior": "Varianta interioară",
+    "interiorFirstOption": "Albă",
+    "interiorSecondOption": "Sură",
+    "interiorThirdOption": "All Inclusive"
   }
 }

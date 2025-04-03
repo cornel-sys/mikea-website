@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@remixicon/react": "^4.6.0",
     "framer-motion": "^12.4.4",
     "next": "15.1.6",
     "next-intl": "^3.26.5",

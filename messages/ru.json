@@ -1,5 +1,19 @@
 {
   "Homepage": {
     "welcome": "Получить детали своего проекта"
+  },
+  "ContactForm": {
+    "title": "Оставьте свои данные",
+    "name": "Имя",
+    "email": "Электронная почта",
+    "terrain": "Доступный участок",
+    "terrainFirstOption": "Я владелец",
+    "terrainSecondOption": "У меня нет участка",
+    "house": "Дом м2",
+    "submitButton": "Отправить",
+    "interior": "Внутренний вариант",
+    "interiorFirstOption": "Белый",
+    "interiorSecondOption": "Серый",
+    "interiorThirdOption": "Все включено"
   }
 }
