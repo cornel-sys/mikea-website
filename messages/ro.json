@@ -3,10 +3,10 @@
     "welcome": "Obține detaliile proiectului tău"
   },
   "ContactForm": {
-    "title": "Lasă-ne datele tale",
+    "title": "Dorești să te contactăm?",
     "name": "Nume",
     "phone": "Telefon",
-    "terrain": "Teren disponibil",
+    "terrain": "Disponibilitatea terenului",
     "terrainFirstOption": "Sunt proprietar",
     "terrainSecondOption": "Nu am teren",
     "house": "Casa m2",

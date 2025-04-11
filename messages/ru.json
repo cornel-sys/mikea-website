@@ -3,17 +3,17 @@
     "welcome": "Получить детали своего проекта"
   },
   "ContactForm": {
-    "title": "Оставьте свои данные",
+    "title": "Оставьте контакты и мы с Вами свяжемся",
     "name": "Имя",
     "phone": "Телефон",
-    "terrain": "Доступный участок",
+    "terrain": "Наличие участка",
     "terrainFirstOption": "Я владелец",
     "terrainSecondOption": "У меня нет участка",
-    "house": "Дом м2",
+    "house": "Площадь дома",
     "submitButton": "Отправить",
     "interior": "Внутренний вариант",
     "interiorFirstOption": "Белый",
     "interiorSecondOption": "Серый",
-    "interiorThirdOption": "Все включено"
+    "interiorThirdOption": "Под ключ"
   }
 }
