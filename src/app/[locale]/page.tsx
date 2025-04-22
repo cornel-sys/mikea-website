@@ -1,10 +1,10 @@
 import React from "react";
 
-import ImageCarousel from "../components/ImageCarousel";
-import PhoneFooter from "../components/PhoneFooter";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import ContactFormAction from "../components/ContactFormAction";
+import ImageCarousel from "../../components/MainCarousel/ImageCarousel";
+import PhoneFooter from "../../components/Footer/PhoneFooter";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import ContactFormAction from "../../components/ContactForm/ContactFormAction";
 
 export default function Home() {
   return (
