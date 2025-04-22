@@ -7,7 +7,7 @@ export const InteriorOptions = () => {
     <section className="flex flex-col gap-2">
       <label className="text-xl font-semibold">{t("interior")}</label>
       {/* first option Sunt proprietar */}
-      <div className="flex flex-wrap gap-y-4 gap-x-6 md:gap-6 font-medium">
+      <div className="flex flex-wrap gap-x-6 md:gap-6 font-medium">
         <div className="flex items-center gap-2">
           <input
             type="radio"

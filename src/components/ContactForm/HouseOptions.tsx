@@ -12,7 +12,7 @@ export const HouseOptions = () => {
   return (
     <section className="flex flex-col gap-2">
       <label className="text-xl font-semibold">{t("house")}</label>
-      <div className="flex flex-wrap gap-y-4 gap-x-6 md:gap-8 md:flex md:flex-row items-center">
+      <div className="flex flex-wrap gap-x-4 md:gap-8 md:flex md:flex-row items-center">
         {/* first option m2 */}
         <div className="flex items-center gap-2">
           <input

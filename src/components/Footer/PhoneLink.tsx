@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const phone = "+373 69 000 000";
+const phone = "+373 78 044088";
 
 const PhoneLink = () => {
   return (
