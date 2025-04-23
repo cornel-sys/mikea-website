@@ -2,7 +2,7 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    const res = await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL!, {
+    const res = await fetch(process.env.SECRET_GOOGLE_SCRIPT_URL!, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
