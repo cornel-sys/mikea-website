@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { NameInput } from "./NameInput";
 import { PhoneInput } from "./PhoneInput";
@@ -13,12 +14,48 @@ type ContactFormProps = {
 };
 
 export default function ContactForm({ onSubmit }: ContactFormProps) {
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    onSubmit();
-  };
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [terrain, setTerrain] = useState("");
+  const [house, setHouse] = useState("");
+  const [interior, setInterior] = useState("");
 
   const t = useTranslations("ContactForm");
+  const [buttonText, setButtonText] = useState(t("submitButton"));
+  const loadingText = t("loadingButton");
+
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+
+    const data = {
+      name,
+      phone,
+      terrain,
+      house,
+      interior,
+    };
+
+    try {
+      setButtonText(loadingText);
+      const response = await fetch("/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully"); //for debugging
+        onSubmit();
+      } else {
+        console.error("Error submitting form:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+    setButtonText(t("submitButton"));
+  };
 
   return (
     <main className="z-50">
@@ -30,23 +67,23 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           </h1>
 
           {/* name input */}
-          <NameInput />
+          <NameInput value={name} onChange={setName} />
 
           {/* email input */}
-          <PhoneInput />
+          <PhoneInput value={phone} onChange={setPhone} />
 
           {/* teren disponibil */}
-          <TerrainOptions />
+          <TerrainOptions value={terrain} onChange={setTerrain} />
 
           {/* house m2 options */}
-          <HouseOptions />
+          <HouseOptions value={house} onChange={setHouse} />
 
           {/* interior options */}
-          <InteriorOptions />
+          <InteriorOptions value={interior} onChange={setInterior} />
 
           {/* submit button */}
           <button type="submit" className="bg-blue-500 text-white p-2 rounded">
-            {t("submitButton")}
+            {buttonText}
           </button>
         </form>
       </div>

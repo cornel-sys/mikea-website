@@ -1,12 +1,13 @@
 import React from "react";
 import { useTranslations } from "next-intl";
+import { Props } from "./ContactType";
 
-export const InteriorOptions = () => {
+export const InteriorOptions = ({ value, onChange }: Props) => {
   const t = useTranslations("ContactForm");
   return (
     <section className="flex flex-col gap-2">
       <label className="text-xl font-semibold">{t("interior")}</label>
-      {/* first option Sunt proprietar */}
+      {/* first option  */}
       <div className="flex flex-wrap gap-x-6 md:gap-6 font-medium">
         <div className="flex items-center gap-2">
           <input
@@ -14,6 +15,8 @@ export const InteriorOptions = () => {
             id="interiorOption1"
             name="interiorOption"
             value={t("interiorFirstOption")}
+            checked={value === t("interiorFirstOption")}
+            onChange={() => onChange(t("interiorFirstOption"))}
             className="cursor-pointer"
             required
           />
@@ -21,13 +24,15 @@ export const InteriorOptions = () => {
             {t("interiorFirstOption")}
           </label>
         </div>
-        {/* second option Nu am */}
+        {/* second option */}
         <div className="flex items-center gap-2">
           <input
             type="radio"
             id="interiorOption2"
             name="interiorOption"
             value={t("interiorSecondOption")}
+            checked={value === t("interiorSecondOption")}
+            onChange={() => onChange(t("interiorSecondOption"))}
             className="cursor-pointer"
             required
           />
@@ -35,13 +40,15 @@ export const InteriorOptions = () => {
             {t("interiorSecondOption")}
           </label>
         </div>
-        {/* third option Nu am */}
+        {/* third option */}
         <div className="flex items-center gap-2">
           <input
             type="radio"
             id="interiorOption3"
             name="interiorOption"
             value={t("interiorThirdOption")}
+            checked={value === t("interiorThirdOption")}
+            onChange={() => onChange(t("interiorThirdOption"))}
             className="cursor-pointer"
             required
           />

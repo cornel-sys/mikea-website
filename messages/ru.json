@@ -11,6 +11,7 @@
     "terrainSecondOption": "У меня нет участка",
     "house": "Площадь дома",
     "submitButton": "Отправить",
+    "loadingButton": "Отправка...",
     "interior": "Внутренний вариант",
     "interiorFirstOption": "Белый",
     "interiorSecondOption": "Серый",

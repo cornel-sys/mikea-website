@@ -1,8 +1,9 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import { RiPhoneFill } from "@remixicon/react";
+import { Props } from "./ContactType";
 
-export const PhoneInput = () => {
+export const PhoneInput = ({ value, onChange }: Props) => {
   const t = useTranslations("ContactForm");
   return (
     <section className="flex items-center gap-2">
@@ -15,12 +16,8 @@ export const PhoneInput = () => {
           placeholder={t("phone")}
           className="w-full p-2 border border-gray-600 rounded bg-neutral-800 ps-8 focus:ring-2 focus:ring-gray-500 focus:outline-none"
           pattern="^\+?[0-9]*$"
-          onInput={(e) => {
-            e.currentTarget.value = e.currentTarget.value.replace(
-              /[^0-9+]/g,
-              ""
-            );
-          }}
+          value={value}
+          onChange={(e) => onChange(e.target.value.replace(/[^0-9+]/g, ""))}
           required
         />
       </div>

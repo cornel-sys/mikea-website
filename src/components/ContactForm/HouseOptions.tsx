@@ -1,7 +1,8 @@
 import React from "react";
 import { useTranslations } from "next-intl";
+import { Props } from "./ContactType";
 
-export const HouseOptions = () => {
+export const HouseOptions = ({ value, onChange }: Props) => {
   const firstOption = "60m2";
   const secondOption = "120m2";
   const thirdOption = "150m2";
@@ -20,6 +21,8 @@ export const HouseOptions = () => {
             id="houseOption1"
             name="radioOption"
             value={firstOption}
+            checked={value === firstOption}
+            onChange={() => onChange(firstOption)}
             className="cursor-pointer"
             required
           />
@@ -34,6 +37,8 @@ export const HouseOptions = () => {
             id="houseOption2"
             name="radioOption"
             value={secondOption}
+            checked={value === secondOption}
+            onChange={() => onChange(secondOption)}
             className="cursor-pointer"
             required
           />
@@ -48,6 +53,8 @@ export const HouseOptions = () => {
             id="houseOption3"
             name="radioOption"
             value={thirdOption}
+            checked={value === thirdOption}
+            onChange={() => onChange(thirdOption)}
             className="cursor-pointer"
             required
           />
@@ -62,6 +69,8 @@ export const HouseOptions = () => {
             id="houseOption4"
             name="radioOption"
             value={fourthOption}
+            checked={value === fourthOption}
+            onChange={() => onChange(fourthOption)}
             className="cursor-pointer"
             required
           />
@@ -76,6 +85,8 @@ export const HouseOptions = () => {
             id="houseOption5"
             name="radioOption"
             value={fifthOption}
+            checked={value === fifthOption}
+            onChange={() => onChange(fifthOption)}
             className="cursor-pointer"
             required
           />
