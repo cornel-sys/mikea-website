@@ -33,7 +33,7 @@ const ImageCarousel = () => {
       <motion.img
         key={index}
         src={images[index]}
-        alt="Current Image"
+        alt="Presentation of House Image"
         className="absolute h-full w-full object-cover"
         initial={{ opacity: 1 }}
         animate={{ opacity: isFading ? 0 : 1 }}
@@ -42,7 +42,7 @@ const ImageCarousel = () => {
       <motion.img
         key={nextIndex}
         src={images[nextIndex]}
-        alt="Next Image"
+        alt="Presentation of House Image"
         className="absolute h-full w-full object-cover"
         initial={{ opacity: 0 }}
         animate={{ opacity: isFading ? 1 : 0 }}
