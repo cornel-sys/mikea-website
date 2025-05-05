@@ -40,7 +40,7 @@ export async function generateMetadata({
       siteName: "Mikea",
       images: [
         {
-          url: "/public/imagini/01.jpg",
+          url: "/public/imagini/03.jpg",
           width: 950,
           height: 575,
           alt: "Mikea - Construcția caselor la cheie",
