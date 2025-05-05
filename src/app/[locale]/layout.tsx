@@ -20,12 +20,11 @@ export async function generateMetadata({
       messages["metadata.title"] || "Mikea - Un nou standard al confortului!",
     description:
       messages["metadata.description"] ||
-      "Creăm locuințe moderne și funcționale care depășesc standardele de confort. Pentru o experiență de trai excepțională, alegeți Mikea!",
+      "Creăm locuințe moderne și funcționale care depășe  sc standardele de confort. Pentru o experiență de trai excepțională, alegeți Mikea!",
     keywords:
       messages["metadata.keywords"] ||
       "case, case de vis, case de lux, case moderne, case confortabile, case funcționale, case personalizate, case ecologice, case eficiente energetic, case inteligente, Moldova, Mikea, case ieftine",
     author: "Mikea Team",
-    viewport: "width=device-width, initial-scale=1",
     icons: {
       icon: "/favicon.ico",
       apple: "/apple-touch-icon.png",
