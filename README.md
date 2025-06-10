@@ -8,20 +8,20 @@ Welcome to the official website of **MIKEA**, a modern real estate development c
 
 ## ✨ Highlights
 
-* **Responsive Design** – Tailored for desktop and mobile experiences
-* **SEO Optimized** – Fast, discoverable, and search-friendly
-* **Modern Tech Stack** – Built with Next.js and Tailwind CSS
-* **Modular Codebase** – Cleanly organized components and structure
-* **Multilingual Ready** – Easily extensible for multiple languages
+- **Responsive Design** – Tailored for desktop and mobile experiences
+- **SEO Optimized** – Fast, discoverable, and search-friendly
+- **Modern Tech Stack** – Built with Next.js and Tailwind CSS
+- **Modular Codebase** – Cleanly organized components and structure
+- **Multilingual Ready** – Easily extensible for multiple languages
 
 ---
 
 ## 🧱 Tech Stack
 
-* **Framework**: [Next.js](https://nextjs.org/)
-* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-* **Language**: TypeScript
-* **Deployment**: [Vercel](https://vercel.com/)
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Language**: TypeScript
+- **Deployment**: [Vercel](https://vercel.com/)
 
 ---
 
