@@ -65,7 +65,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className="scrollbar-hide no-select">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

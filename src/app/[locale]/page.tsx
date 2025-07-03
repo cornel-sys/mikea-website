@@ -1,26 +1,19 @@
+import Header from "@/src/components/Header/Header";
 import React from "react";
 
-import ImageCarousel from "../../components/MainCarousel/ImageCarousel";
-import PhoneFooter from "../../components/Footer/PhoneFooter";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
-import ContactFormAction from "../../components/ContactForm/ContactFormAction";
+import { Montserrat } from "next/font/google";
+import MainImage from "@/src/components/MainImage/MainImage";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export default function Home() {
   return (
-    <main className="scrollbar-hide overflow-auto h-full flex-col items-center select-none">
+    <main className={`${montserrat.className}`}>
       <Header />
-
-      {/* Background Image Carousel */}
-      <ImageCarousel />
-
-      {/* Contact Form */}
-      <ContactFormAction />
-
-      <footer className="z-10 absolute flex flex-col gap-2 lg:flex-row bottom-0 justify-between items-center w-full h-auto px-2 lg:py-3 lg:px-16 bg-neutral-900">
-        <PhoneFooter />
-        <Footer />
-      </footer>
+      <MainImage />
     </main>
   );
 }
