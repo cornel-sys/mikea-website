@@ -2,6 +2,8 @@ import React from "react";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
 // Dynamic metadata generation
 export async function generateMetadata({
@@ -64,8 +66,8 @@ export default async function LocaleLayout({
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale}>
-      <body className="scrollbar-hide no-select">
+    <html lang={locale} className={montserrat.className}>
+      <body>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

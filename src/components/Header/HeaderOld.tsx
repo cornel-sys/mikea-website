@@ -4,13 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 
-import { Roboto } from "next/font/google";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
 export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
@@ -30,9 +23,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center w-full px-2 lg:px-24 bg-neutral-900/80 backdrop-blur-md outline-none border-none">
       <div className="hidden md:flex w-10"></div>
-      <h1
-        className={`text-5xl md:text-6xl lg:text-8xl font-semibold ${roboto.className}`}
-      >
+      <h1 className={`text-5xl md:text-6xl lg:text-8xl font-semibold`}>
         Mikea
       </h1>
       <Image

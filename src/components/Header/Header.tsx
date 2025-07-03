@@ -43,12 +43,17 @@ export default function Header() {
          transition-all duration-300
         ${atTop ? "backdrop-blur-0" : "bg-neutral-900/50 backdrop-blur-md"}`}
     >
-      {/* Border - full width on mobile, custom width on larger screens */}
+      {/* Animated border */}
       <div
-        className={`absolute bottom-0 h-0.5 bg-red-500 transition-opacity duration-300
-          left-0 w-full 
-          md:left-[calc(50%-calc(2/3*50%)-10px)] md:w-[calc(66.666667%+20px)]
-          ${atTop ? "opacity-100" : "opacity-0"}`}
+        className="absolute bottom-0 left-0 w-full md:left-[calc(50%-calc(2/3*50%)-10px)] md:w-[calc(66.666667%+20px)]"
+        style={{
+          height: atTop ? 3 : 0,
+          background: "#ef4444", // Tailwind red-500
+          transition: "height 0.3s cubic-bezier(0.4,0,0.2,1)",
+          borderRadius: 2,
+          opacity: atTop ? 1 : 0,
+          pointerEvents: "none",
+        }}
       />
 
       <div className="flex justify-center items-center w-full space-x-4 md:space-x-7 lg:space-x-10 py-2 md:py-4">
