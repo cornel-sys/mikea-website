@@ -45,9 +45,9 @@ export default function MainImage() {
         onClick={() => setIsOpen(false)}
       >
         <div
-          className={`absolute left-1/2 top-[45%] md:top-1/2 w-4/5 xl:w-auto bg-zinc-800 p-2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg z-50 transition-all duration-500 ease-in-out ${
+          className={`absolute left-1/2 top-[50%] transform -translate-x-1/2 -translate-y-1/2 md:top-1/2 w-4/5 xl:w-auto bg-zinc-800 p-2  rounded-lg z-50 transition-all duration-500 ease-in-out ${
             isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95"
-          }`}
+          } overflow-y-auto max-h-[80%]`}
           onClick={(e) => e.stopPropagation()}
         >
           <ContactForm onSubmit={() => setIsOpen(false)} />

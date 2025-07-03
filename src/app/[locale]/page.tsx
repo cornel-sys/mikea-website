@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 
 export default function Home() {
   return (
-    <main className={`${montserrat.className}`}>
+    <main className={`${montserrat.className} flex flex-col`}>
       <Header />
       <MainImage />
     </main>
