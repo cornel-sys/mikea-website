@@ -3,9 +3,26 @@
 import Link from "next/link";
 import React from "react";
 import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Header() {
   const [atTop, setAtTop] = useState(true);
+
+  const pathname = usePathname();
+  const router = useRouter();
+
+  // Extract locale from the current path
+  const currentLocale = pathname.startsWith("/ro") ? "ro" : "ru";
+  const newLocale = currentLocale === "ru" ? "ro" : "ru";
+
+  const switchLanguage = () => {
+    // Replace the locale in the pathname
+    const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
+
+    // Push the new URL
+    router.push(newPath);
+  };
 
   useEffect(() => {
     // Force scroll to top on page load/refresh
@@ -22,7 +39,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 flex justify-between items-center w-full px-2 lg:px-24 z-50 outline-none
+      className={`fixed top-0 left-0 flex justify-between items-center w-full px-2 lg:px-24 z-30 outline-none
          transition-all duration-300
         ${atTop ? "backdrop-blur-0" : "bg-neutral-900/50 backdrop-blur-md"}`}
     >
@@ -34,12 +51,21 @@ export default function Header() {
           ${atTop ? "opacity-100" : "opacity-0"}`}
       />
 
-      <div className="flex justify-center items-center w-full space-x-4 md:space-x-7 lg:space-x-10 py-2 md:py-4 ">
+      <div className="flex justify-center items-center w-full space-x-4 md:space-x-7 lg:space-x-10 py-2 md:py-4">
         <HouseLink href="/" title="Mikea 1" />
         <HouseLink href="/" title="Mikea 3" />
         <HouseLink href="/" title="Mikea 5" />
         <HouseLink href="/" title="Mikea 7" />
       </div>
+      <Image
+        src="/globe.svg"
+        alt="Language Chooser"
+        width={40}
+        height={40}
+        className="h-5 md:h-10 w-auto cursor-pointer"
+        onClick={switchLanguage}
+        tabIndex={0}
+      />
     </header>
   );
 }
