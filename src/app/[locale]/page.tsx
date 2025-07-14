@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex flex-col scrollbar-hide no-select">
       <Header />
       <MainImage />
-      <HouseCard translation="FirstCard" />
+      <HouseCard translation="FirstCard" image="/imagini/02.webp" />
     </main>
   );
 }

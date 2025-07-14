@@ -4,15 +4,16 @@ import { useTranslations } from "next-intl";
 
 type HouseCardProps = {
   translation: string;
+  image: string;
 };
 
-export default function HouseCard({ translation }: HouseCardProps) {
+export default function HouseCard({ translation, image }: HouseCardProps) {
   const t = useTranslations(translation);
   return (
     <main className="flex flex-col justify-center items-center">
       <section className="bg-white shadow-lg rounded-lg p-4 flex flex-col md:flex-row w-full">
         <Image
-          src="/imagini/01.jpg"
+          src={image}
           alt="Main Page Image"
           height={575}
           width={950}
