@@ -30,7 +30,7 @@ export default function MainImage() {
           <button
             type="button"
             onClick={() => setIsOpen(true)}
-            className="focus:outline-none text-white bg-red-600 hover:bg-red-500 font-semibold rounded-lg text-xs md:text-sm lg:text-lg px-5 py-2.5 me-2 mb-2"
+            className="focus:outline-none text-white bg-red-600 hover:bg-red-500 font-semibold rounded-lg text-xs md:text-sm lg:text-lg px-5 py-2.5 me-2 mb-2 transition-all duration-500"
           >
             {t("mainButton")}
           </button>

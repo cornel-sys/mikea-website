@@ -23,9 +23,14 @@
     "keywords": "case, case de vis, case de lux, case moderne, case confortabile, case funcționale, case personalizate, case ecologice, case eficiente energetic, case inteligente, Moldova, Mikea, case ieftine"
   },
   "MainPage": {
-    "mainButton": "Vino la oficiu",
-    "firstCardTitle": "Fiecare casă în 5 opțiuni",
-    "firstCardText": "Fiecare casă vine cu 3 până la 5 opțiuni de planșeu, precum și un design interior în stil Mikea",
-    "firstCardSubtext": " Casa este proiectată pentru a se potrivi pe orice parcelă, fiecare proiect oferind o versiune spate/fată a amplasării casei pe parcelă"
+    "mainButton": "Vino la oficiu"
+  },
+  "FirstCard": {
+    "title": "Fiecare casă în 5 opțiuni",
+    "text": "Fiecare casă vine cu 3 până la 5 opțiuni de planșeu, precum și un design interior în stil Mikea",
+    "subtext": "Casa este proiectată pentru a se potrivi pe orice parcelă, fiecare proiect oferind o versiune spate/fată a amplasării casei pe parcelă",
+    "button": "Vino la oficiu",
+    "secondTitle": "O istorie de 10 ani",
+    "secondText": "Fiecare an, timp de 10 ani, actualizăm aceste case și le îmbunătățim ținând cont de experiența anterioară, tendințele și inovațiile actuale."
   }
 }
