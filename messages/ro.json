@@ -32,5 +32,17 @@
     "button": "Vino la oficiu",
     "secondTitle": "O istorie de 10 ani",
     "secondText": "Fiecare an, timp de 10 ani, actualizăm aceste case și le îmbunătățim ținând cont de experiența anterioară, tendințele și inovațiile actuale."
+  },
+  "SecondCard": {
+    "title": "Forme simple",
+    "text": "Conceptul Mikea este în continuă dezvoltare, implicând o echipă mare de designeri, arhitecți și ingineri, precum și proprietari care deja locuiesc în aceste case.",
+    "subtext": "Datorită sugestiilor voastre, am creat împreună o colecție unică de case!",
+    "button": "Vino la oficiu",
+    "secondTitle": "Casă pentru 100 de ani",
+    "secondText": "Chiar și după 100 de ani, casa va arăta modernă datorită formelor simple, liniilor clare, designului minimalist și nuanțelor naturale."
+  },
+  "Footer": {
+    "text": "Fiecare casă este prezentată în versiunea spate/fată a planului și poate fi amplasată pe orice parcelă.",
+    "contact": "Contacte"
   }
 }

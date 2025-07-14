@@ -2,13 +2,13 @@ import React from "react";
 
 import ImageCarousel from "../../../components/MainImage/ImageCarousel";
 import PhoneFooter from "../../../components/Footer/PhoneFooter";
-import Footer from "../../../components/Footer/Footer";
+import Footer from "../../../components/Footer/FooterOld";
 import Header from "../../../components/Header/HeaderOld";
 import ContactFormAction from "../../../components/ContactForm/ContactFormAction";
 
 export default function Home() {
   return (
-    <main className="scrollbar-hide overflow-auto h-full flex-col items-center select-none">
+    <main className="scrollbar-hide overflow-auto h-full flex-col items-center select-none text-white">
       <Header />
 
       {/* Background Image Carousel */}
