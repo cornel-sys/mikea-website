@@ -62,9 +62,9 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       <div className="flex flex-col gap-2 justify-center items-center w-full h-auto p-4 md:py-10 md:px-16 bg-neutral-900 rounded-md text-gray-200">
         <form className="flex flex-col gap-4 w-full" onSubmit={handleSubmit}>
           {/* contact us title */}
-          <h1 className="text-xl md:text-3xl font-semibold text-gray-300">
+          <h2 className="text-xl md:text-3xl font-semibold text-gray-300">
             {t("title")}
-          </h1>
+          </h2>
 
           {/* name input */}
           <NameInput value={name} onChange={setName} />

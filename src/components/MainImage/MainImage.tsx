@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import ContactForm from "../ContactForm/ContactForm";
 
 export default function MainImage() {
-  const t = useTranslations("MainImage");
+  const t = useTranslations("MainPage");
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -32,7 +32,7 @@ export default function MainImage() {
             onClick={() => setIsOpen(true)}
             className="focus:outline-none text-white bg-red-600 hover:bg-red-500 font-semibold rounded-lg text-xs md:text-sm lg:text-lg px-5 py-2.5 me-2 mb-2"
           >
-            {t("button")}
+            {t("mainButton")}
           </button>
         </div>
       </div>
