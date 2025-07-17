@@ -10,13 +10,15 @@ export default function MainImage() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <main className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden z-10">
+    <main id="main-image" className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden z-10">
       <Image
         src="/imagini/mainpage.webp"
         alt="Main Page Image"
         fill
         className="object-cover"
         priority
+        sizes="100vw"
+        quality={100}
       />
 
       {/* Text & Button */}

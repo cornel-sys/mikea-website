@@ -82,7 +82,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           <InteriorOptions value={interior} onChange={setInterior} />
 
           {/* submit button */}
-          <button type="submit" className="bg-blue-500 text-white p-2 rounded">
+          <button type="submit" className="bg-red-600 text-white p-2 rounded">
             {buttonText}
           </button>
         </form>

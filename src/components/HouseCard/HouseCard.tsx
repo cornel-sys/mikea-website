@@ -12,13 +12,18 @@ export default function HouseCard({ translation, image }: HouseCardProps) {
   return (
     <main className="flex flex-col justify-center items-center">
       <section className="bg-white shadow-lg rounded-lg p-4 flex flex-col md:flex-row w-full">
-        <Image
-          src={image}
-          alt="Main Page Image"
-          height={575}
-          width={950}
-          className="w-full md:w-2/3 h-auto"
-        />
+        {/* Image wrapper */}
+        <div className="relative w-full md:w-2/3 aspect-[950/575]">
+          <Image
+            src={image}
+            alt="Main Page Image"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw"
+            quality={100}
+            loading="lazy"
+            fill
+            className="object-cover rounded-lg"
+          />
+        </div>
 
         <div className="flex flex-col justify-between px-10 md:px-4 md:py-4 xl:py-12 xl:px-20 w-full md:w-1/3">
           <div>

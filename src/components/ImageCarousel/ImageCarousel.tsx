@@ -40,7 +40,10 @@ export default function Gallery() {
               alt={`gallery-${idx}`}
               width={1920}
               height={1080}
-              className="w-full object-cover rounded-lg"
+              className="rounded-lg"
+              sizes="100vw"
+              loading="lazy"
+              quality={100}
             />
           </div>
         ))}
