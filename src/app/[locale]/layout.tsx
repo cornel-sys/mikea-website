@@ -2,6 +2,8 @@ import React from "react";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
 // Dynamic metadata generation
 export async function generateMetadata({
@@ -20,7 +22,7 @@ export async function generateMetadata({
       messages["metadata.title"] || "Mikea - Un nou standard al confortului!",
     description:
       messages["metadata.description"] ||
-      "Creăm locuințe moderne și funcționale care depășe  sc standardele de confort. Pentru o experiență de trai excepțională, alegeți Mikea!",
+      "Creăm locuințe moderne și funcționale care depășesc standardele de confort. Pentru o experiență de trai excepțională, alegeți Mikea!",
     keywords:
       messages["metadata.keywords"] ||
       "case, case de vis, case de lux, case moderne, case confortabile, case funcționale, case personalizate, case ecologice, case eficiente energetic, case inteligente, Moldova, Mikea, case ieftine",
@@ -64,7 +66,7 @@ export default async function LocaleLayout({
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={montserrat.className}>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}

@@ -21,5 +21,28 @@
     "title": "Mikea - Un nou standard al confortului!",
     "description": "Creăm locuințe moderne și funcționale care depășesc standardele de confort. Pentru o experiență de trai excepțională, alegeți Mikea!",
     "keywords": "case, case de vis, case de lux, case moderne, case confortabile, case funcționale, case personalizate, case ecologice, case eficiente energetic, case inteligente, Moldova, Mikea, case ieftine"
+  },
+  "MainPage": {
+    "mainButton": "Vino la oficiu"
+  },
+  "FirstCard": {
+    "title": "Fiecare casă în 5 opțiuni",
+    "text": "Fiecare casă vine cu 3 până la 5 opțiuni de planșeu, precum și un design interior în stil Mikea",
+    "subtext": "Casa este proiectată pentru a se potrivi pe orice parcelă, fiecare proiect oferind o versiune spate/fată a amplasării casei pe parcelă",
+    "button": "Vino la oficiu",
+    "secondTitle": "O istorie de 10 ani",
+    "secondText": "Fiecare an, timp de 10 ani, actualizăm aceste case și le îmbunătățim ținând cont de experiența anterioară, tendințele și inovațiile actuale."
+  },
+  "SecondCard": {
+    "title": "Forme simple",
+    "text": "Conceptul Mikea este în continuă dezvoltare, implicând o echipă mare de designeri, arhitecți și ingineri, precum și proprietari care deja locuiesc în aceste case.",
+    "subtext": "Datorită sugestiilor voastre, am creat împreună o colecție unică de case!",
+    "button": "Vino la oficiu",
+    "secondTitle": "Casă pentru 100 de ani",
+    "secondText": "Chiar și după 100 de ani, casa va arăta modernă datorită formelor simple, liniilor clare, designului minimalist și nuanțelor naturale."
+  },
+  "Footer": {
+    "text": "Fiecare casă este prezentată în versiunea spate/fată a planului și poate fi amplasată pe orice parcelă.",
+    "contact": "Contacte"
   }
 }

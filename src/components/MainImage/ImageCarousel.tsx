@@ -8,7 +8,7 @@ import React from "react";
 const ImageCarousel = () => {
   const images = Array.from(
     { length: 19 },
-    (_, i) => `/imagini/${String(i + 1).padStart(2, "0")}.jpg`
+    (_, i) => `/imagini/${String(i + 1).padStart(2, "0")}.webp`
   );
   const [index, setIndex] = useState(0);
   const [nextIndex, setNextIndex] = useState(1);
