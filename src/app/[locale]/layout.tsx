@@ -3,6 +3,8 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Montserrat } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
 // Dynamic metadata generation
@@ -70,6 +72,8 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <Analytics />
+          <SpeedInsights />
         </NextIntlClientProvider>
       </body>
     </html>
